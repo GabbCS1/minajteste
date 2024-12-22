@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Navegável</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js"></script>
+    <style>
+        #openseadragon {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="openseadragon"></div>
+    <script>
+        OpenSeadragon({
+            id: "openseadragon",
+            tileSources: "./dzc_output.xml" // Caminho para o XML gerado
+        });
+    </script>
+</body>
+</html>
